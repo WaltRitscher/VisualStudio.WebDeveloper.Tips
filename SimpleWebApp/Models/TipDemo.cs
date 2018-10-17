@@ -10,7 +10,6 @@ namespace SimpleWebApp.Models
 
     public void ExampleCode()
     {
-      var tour = TourSource
-    }
+     
   }
 }
