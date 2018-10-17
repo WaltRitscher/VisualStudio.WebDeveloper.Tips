@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip08-MarkdownEditor", "Tip08-MarkdownEditor", "{E1334791-4EBC-4B3F-8361-D0BAF11B6ACD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip09-StatusCode", "Tip09-StatusCode", "{E1334791-4EBC-4B3F-8361-D0BAF11B6ACD}"
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
