@@ -72,7 +72,7 @@
   <ItemGroup>
     <Compile Include="Models\TipDemo.cs" />
     <Compile Include="Models\TourStop.cs" />
-    <Compile Include="Models\TourStops.cs" />
+    <Compile Include="Models\TourSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
