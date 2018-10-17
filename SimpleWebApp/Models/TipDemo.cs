@@ -7,5 +7,10 @@ namespace SimpleWebApp.Models
 {
   public class TipDemo
   {
+
+    public void ExampleCode()
+    {
+
+    }
   }
 }
