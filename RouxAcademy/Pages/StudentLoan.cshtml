@@ -1,0 +1,72 @@
+﻿@page
+@model StudentLoanModel
+@{
+
+	Layout = "_LayoutOther";
+
+
+
+
+
+	
+}
+<article id="mainContent">
+	<h1>Student Loan</h1>
+
+	<form class="form form-horizontal" method="post">
+		<div asp-validation-summary="All"></div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label asp-for="StudentLoan.Amount" class="col-md-3 right">Amount:</label>
+					<div class="col-md-9">
+						<input asp-for="StudentLoan.Amount" class="form-control" />
+						<span asp-validation-for="StudentLoan.Amount"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label asp-for="StudentLoan.Rate" class="col-md-3 right">Rate:</label>
+					<div class="col-md-9">
+						<input asp-for="StudentLoan.Rate" class="form-control" />
+						<span asp-validation-for="StudentLoan.Rate"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label asp-for="StudentLoan.LengthInMonths" class="col-md-3 right">Loan Length in Months:</label>
+					<div class="col-md-9">
+						<input asp-for="StudentLoan.LengthInMonths" class="form-control" />
+						<span asp-validation-for="StudentLoan.LengthInMonths"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label asp-for="StudentLoan.MonthlyPayment" class="col-md-3 right">Estimated Payment:</label>
+					<div class="col-md-9">
+						<input asp-for="StudentLoan.MonthlyPayment" readonly class="form-control-static" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<button type="submit">Calculate Monthly Payment</button>
+			</div>
+		</div>
+
+
+	</form>
+
+
+</article>
