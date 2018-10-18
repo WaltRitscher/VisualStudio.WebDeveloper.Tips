@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Roux Academy</title>
+	<environment include="Development">
+		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="~/css/RouxMain.css" />
+	</environment>
+	<environment exclude="Development">
+		<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+					asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+					asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+	</environment>
+
+
+</head>
+<body>
+
+	<div class="container body-content">
+		<header class="aboutHeader pageHeader">
+			<h1>Roux Academy of Art and Design<a href="Index" title="home"></a></h1>
+			<nav id="pageNav" class="cf">
+				<ul>
+					<li><a href="/Index" })" title="home">Home</a></li>
+					<li><a href="/StudentLoan" })" title="studentloan">Student Loan</a></li>
+
+					<li><a href="/about" title="about Roux Academy">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		@RenderBody()
+		<aside>
+			<section class="academic info">
+				<h2>Academic Links</h2>
+				<ul>
+					<li><a href="@Url.Action("OtherPage",new  {id="Undergraduate Degrees" })" title="undergraduate degrees">Undergraduate Degrees</a></li>
+					<li><a href="@Url.Action("OtherPage",new  {id="Graduate Degrees" })" title="Graduate Degrees">Graduate Degree</a></li>
+					<li><a href="@Url.Action("OtherPage",new  {id="Continuing Education" })" title="Continuing education">Continuing Education</a></li>
+					<li><a href="@Url.Action("OtherPage",new  {id="Faculty Profiles" })" title="Faculty">Faculty Profiles</a></li>
+					<li><a href="@Url.Action("OtherPage",new  {id="Internship Programs" })" title="Internship programs">Internship Programs</a></li>
+					<li><a href="@Url.Action("OtherPage",new  {id="Academic Calendar" })" title="Academic calendar">Academic Calendar</a></li>
+				</ul>
+			</section>
+			<section class="connect info">
+				<h2>Connect with us</h2>
+				<ul>
+					<li><a href="http://www.twitter.com/rouxacademy" title="Follow us!" target="_blank" class="twitter">Twitter</a></li>
+					<li><a href="http://facebook.com" title="Be our friend" target="_blank" class="facebook">Facebook</a></li>
+					<li><a href="http://www.linkedin.com" title="Let's connect" target="_blank" class="linked">LinkedIn</a></li>
+				</ul>
+			</section>
+			<section class="find info">
+				<h2>Find out more</h2>
+				<ul>
+					<li><a href="../tour.htm" title="Take a campus tour">Take a campus tour</a></li>
+					<li><a href="../catalog.htm" title="course catalog">Download a course catalog</a></li>
+					<li><a href="../admissions.htm" title="Apply now">Apply now</a></li>
+				</ul>
+			</section>
+			<section class="show info">
+				<h2>Current Show</h2>
+				<img src="~/images/show1.jpg" width="285" height="230" alt="Current show">
+				<p>Join us on May 11th for the opening reception of Ceramic Currency, an annual show presented by graduates from the Craft and Design program. Come see an exhibition of contemporary pottery and ceramic sculpture by over 30 artists. <a href="current_show.htm" title="current show" class="more">more info</a></p>
+			</section>
+		</aside>
+
+
+		<hr />
+		<footer>
+			<div class="col-md-3">
+				<p>  &copy; @DateTime.Now.Year - Roux Academy of Art &amp; Design</p>
+			</div>
+			<div class="col-md-9"><p class="text-left"><i>Roux Academy is a fictitious brand created by <i>LinkedIn Learning</i> solely for the purpose of training. All products and people associated with Roux Academy are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the products or curriculum is also fictitious and should not be construed to be representative of actual products or curriculum on the market in a similar product category.</i></p></div>
+		</footer>
+	</div>
+
+	@RenderSection("scripts", required: false)
+</body>
+</html>
