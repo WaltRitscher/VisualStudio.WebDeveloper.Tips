@@ -5,11 +5,12 @@ using System.Web;
 
 namespace SimpleWebApp.Models
 {
-  public class TipDemo
-  {
+	public class TipDemo
+	{
 
-    public void ExampleCode()
-    {
-     
-  }
+		public void ExampleCode()
+		{
+
+		}
+	}
 }
