@@ -19,7 +19,7 @@ namespace RouxAcademy.Pages
     {
       StudentLoan =  new Models.Loan { Amount = 600, Rate = .12M, LengthInMonths = 24 };
 
-      Message = "Your contact page.";
+      Message = "Welcome to the Roux Academey contact page.";
     }
 
 
