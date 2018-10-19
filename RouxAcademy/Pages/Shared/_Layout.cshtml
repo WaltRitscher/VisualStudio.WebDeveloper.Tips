@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Roux Academy</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/RouxMain.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+       </environment>
+</head>
+<body>
+
+	<div class="container body-content">
+		@RenderBody()
+		<hr />
+		<footer>
+			<div class="col-md-3">
+				<p>  &copy; @DateTime.Now.Year - Roux Academy of Art &amp; Design</p>
+			</div>
+			<div class="col-md-9"><p class="text-left"><i>Roux Academy is a fictitious brand created by <i>LinkedIn Learning</i> solely for the purpose of training. All products and people associated with Roux Academy are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the products or curriculum is also fictitious and should not be construed to be representative of actual products or curriculum on the market in a similar product category.</i></p></div>
+		</footer>
+	</div>
+)
+	@RenderSection("Scripts", required: false)
+</body>
+</html>

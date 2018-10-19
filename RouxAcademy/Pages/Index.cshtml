@@ -1,0 +1,54 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div class="row" style="background-color:white">
+	<header class="homeHeader pageHeader">
+		<h1>Roux Academy of Art and Design<a href="@Url.Action("Index")" title="home"></a></h1>
+		<nav id="pageNav" class="cf">
+			<ul>
+				<li><a href="/Index" })" title="home">Home</a></li>
+				<li><a href="/StudentLoan" })" title="studentloan">Student Loan</a></li>
+				<li><a href="/about" title="about Roux Academy">About</a></li>
+			</ul>
+		</nav>
+
+
+	</header>
+	<div>
+		<p class="brandingNew">We are passionate about the role of <span class="orangeNew">innovation</span> and <span class="lavenderNew">creativity</span> in solving the <span class="orangeNew">design</span> challenges of tomorrow.</p>
+		<section class="spotlight info condense">
+			<h2>Student Spotlight</h2>
+			<img src="~/images/award.jpg" 285" height="230" alt="Featured student work">
+			<p>Gerald Chow will graduate from Roux Academy this spring with a BFA and a painting concentration. He took his longtime interest in graffiti and street art and has translated it to the canvas in cartoonish, graphical pictures. <a href="spotlight.htm" title="student profile" class="more">more info</a></p>
+		</section>
+		<section class="show info condense">
+			<h2>Current Show</h2>
+			<img src="~/images/Eye200.png" width="285" height="230" alt="Current show">
+			<p>Join us on May 11th for the opening reception of Ceramic Currency, an annual show presented by graduates from the Craft and Design program. Come see an exhibition of contemporary pottery and ceramic sculpture by over 30 artists. <a href="current_show.htm" title="current show" class="more">more info</a></p>
+		</section>
+
+		<section class="events info condense">
+			<h2>Coming Events</h2>
+			<img src="~/images/events.jpg" alt="Coming events" width="285" height="230" class="info">
+			<ul>
+				<li><span class="date">3/10</span> Roux Benefit for the Elementary Arts Concert</li>
+				<li><span class="date">3/12</span> Midterm exams begin</li>
+				<li><span class="date">3/16</span> 5th Annual Working Artist Lecture Series kicks off</li>
+				<li><span class="date">4/06</span>Opening reception for The Stone World exhibit</li>
+				<li><span class="date">4/23</span>Roux Student Fashion Weeks starts</li>
+
+			</ul>
+		</section>
+
+		<article id="mainContent">
+			<h2>Fall registration is now open</h2>
+			<p>Here at Roux, we&rsquo;re as excited for the upcoming school year as we are this one. Visiting professors Barry Mandow (renowned photojournalist) and Rebecca Short (textile designer) will be joining us in the fall and construction on the Roux North remodel will be completed by October @DateTime.Now.Year.</p>
+			<p>Registration for the Fall @DateTime.Now.Year semester opens July 13th. Current students: don&rsquo;t forget to sign up for your registration appointment. If you&rsquo;re a prospective student looking to apply to Roux, now is the time to meet with a counselor to polish up those last remaining application details and complete any necessary paperwork for grants and scholarships. The application deadline is April 13th. Program spots will be awarded on a first-come, first-serve basis, so file your applications soon.</p>
+
+			<a href="admissions.htm" title="Admissions" class="btn btn-primary btn-lg">Visit our Admissions Page for more information </a>
+		</article>
+	</div>
+
