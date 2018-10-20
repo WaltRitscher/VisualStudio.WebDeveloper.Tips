@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tip09-Roslynator", "Tip09-Roslynator", "{E1334791-4EBC-4B3F-8361-D0BAF11B6ACD}"
+	ProjectSection(SolutionItems) = preProject
+		..\RoslynatorCompare.png = ..\RoslynatorCompare.png
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCoreApp", "BasicCoreApp\BasicCoreApp.csproj", "{4F118F67-9099-4AE7-BEF0-C8136F1AEF61}"
 EndProject
